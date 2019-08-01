@@ -5,6 +5,8 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express();
+const port = process.env.PORT || 3000;
+
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -98,4 +100,4 @@ const pwedie = "You know it's fun ihgrt?"
 const pie = "oyu nkow hwat, ryt ti uot nda hent uyo acn ysa fi uoy"
 const hey = "kiel ti ro otn"
 
-app.listen(3000, console.log('Listening on port 3000'));
+app.listen(port, console.log('Listening on port ' + port));
